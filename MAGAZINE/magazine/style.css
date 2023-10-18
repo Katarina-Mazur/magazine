@@ -11,10 +11,12 @@ body{
     align-items: center;
     background: #474747;
 }
+
 div input[type="search"]{
     width: 900px;
     min-height: 47px;
     border-radius: 17px;
+    background: #efeeee;
 }
 input::placeholder{
     background: url(search.svg) no-repeat;
@@ -40,6 +42,65 @@ div .myroom{
 .sidebare ul li{
     list-style-type: none;
 }
+/*Фильтр по цене*/
+.range-filter{
+    padding-top:10px;
+    width:240px;
+    margin-left: 50px;
+    margin-bottom:10px;
+}
+.range-controls{
+    position:relative;
+    height:80px;
+    margin-bottom:15px;
+    padding:0 30px;
+    background:#34495e;
+    border-radius:5px;
+    overflow:hidden;
+}
+.scale{
+    margin-top:39px;
+    height:2px;
+    background:#d7dcde;
+}
+.bar{
+    height:2px;
+    background:#00ca74;
+}
+.toggle{
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:4px;
+    height:4px;
+    border:8px solid white;
+    background:#ababab;
+    cursor:pointer;
+    border-radius:50%;
+}
+.min-toggle{
+    left: 10px;
+}
+.max-toggle{
+    left:165px;
+}
+input{
+    width:55px;
+    padding:8px 10px;
+    margin-left:10px;
+    border:none;
+    background:#34495e;
+    font-size:16px;
+    font-family:"Tahoma", sans-serif;
+    text-align:center;
+    color:#283136;
+    border-radius:5px;
+    color:white;
+}
+input:first-child{
+    margin-right:14px;
+}
+
 .main{
     width: 100%;
     /*display: flex;
@@ -48,6 +109,7 @@ div .myroom{
     align-items: flex-start;*/
     margin-right: 50px;
 }
+
 /*.main div{
     max-width: 220px;
     width: 100%;
@@ -56,18 +118,50 @@ div .myroom{
     padding: 10px;
     margin: 20px 0;
 }*/
+.shadows{
+    transition: transform 0.25s;
+}
+.shadows:hover{
+    transform: scale(1.05);
+}
 .main img{
     width: 150px;
     height: 170px;
 }
-.main div p{
+.main div h1{
     margin: 7px 0;
     color: rgb(183, 179, 179);
+    text-align: left;
+}
+.main form p{
+    color: rgb(183, 179, 179);
+    text-align: left;
 }
 .main form button{
     margin-top: 10px;
+    border: none;
+    background: none;
+    float: right;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+.main form button svg:hover{
+    transform: scale(1.1);
+
 }
 .main ul li{
    padding-top: 30px;
+
+}
+button.btn.btn-primary.mess{
+    background: none;
+    border: none;
+    position:relative;
+    left: 100%;
+    bottom: 100px;
+
+}
+button.btn.btn-primary.mess svg{
+    color: #464440;
 
 }

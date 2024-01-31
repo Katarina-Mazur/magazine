@@ -9,7 +9,7 @@ body{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    background: #474747;
+    background: #34495e;
 }
 
 div input[type="search"]{
@@ -28,6 +28,63 @@ div .myroom{
     height: 50px;
     border-radius: 15px;
 }
+/*Корзина*/
+.casse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+ .casse input[type="button"]{
+    border-radius: 5px;
+ }
+ .casse input[type="text"]{
+    text-align: center;
+    width: 45px;
+    height: 36px;
+ }
+ .casse h2,
+ .casse p{
+    margin: 10px 0;
+    text-align: center;
+    color: #a3aab2;
+    text-transform: uppercase;
+    font-weight: bolder;
+ }
+ .cash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .cash p{
+    font-weight: bolder;
+    font-style: italic;
+    margin: 10px 0;
+ }
+ .cash button{
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #a3aab2;
+    background: #34495e;
+    cursor: pointer;
+    transition: transform 0.25s;;
+ }
+ .cash button:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    background:#53ea93;
+    color: #283136;
+  }
+ .button_title{
+    border: none;
+    background: none;
+    cursor: pointer;
+ }
 .home{
     display: flex;
     margin-top: 100px;
@@ -79,13 +136,13 @@ div .myroom{
     border-radius:50%;
 }
 .min-toggle{
-    left: 10px;
+    left: 25px;
 }
 .max-toggle{
-    left:165px;
+    left:200px;
 }
 input{
-    width:55px;
+    width:75px;
     padding:8px 10px;
     margin-left:10px;
     border:none;
@@ -164,4 +221,105 @@ button.btn.btn-primary.mess{
 button.btn.btn-primary.mess svg{
     color: #464440;
 
+}
+/*страница товара*/
+.product{
+    margin: 100px 50px 30px 50px;
+}
+.product a{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 40px;
+    font-size: 1.3em;
+    color: #515d63;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.product a::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: rgb(32, 170, 69);
+}
+.product a:hover::before{
+	width: 100%;
+}
+.product a::before {
+	transition: width 0.35s;
+}
+/*slider*/
+.uk-position-relative.uk-visible-toggle.uk-light{
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+    margin-left: 50px;
+}
+/*swiper*/
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+.swiper-div{
+    width: 700px;
+    margin-left: 70px;
+}
+.produkt_div{
+    display: flex;
+    flex-direction: row;
+}
+.name_prod{
+    margin-left: 70px;
+    padding: 50px 200px 0 200px;
+    border: solid 1px rgb(210, 207, 207);
+    border-radius: 15px;
+}
+.name_prod h1{
+    font-size: 50px;
+    color: #646b6e;
+}
+.name_prod p{
+    margin: 40px 0px;
+
+}
+.name_prod button{
+    margin: 50px 0;
+    border: #00ca74 solid;
+    width: 170px;
+    background: #00ca74;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+.name_prod button:hover{
+    transform: scale(1.1);
+}
+.p_div h3{
+    margin: 70px 0 0 100px;
+    font-size: 40px;
+}
+.p_div p{
+    margin: 100px;
+    font-size: 1.5em;
+    color: #515d63;
+}
+.p_div{
+    margin: 50px;
+    border: solid 1px rgb(210, 207, 207);
+    border-radius: 15px;
 }

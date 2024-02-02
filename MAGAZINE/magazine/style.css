@@ -323,3 +323,130 @@ button.btn.btn-primary.mess svg{
     border: solid 1px rgb(210, 207, 207);
     border-radius: 15px;
 }
+
+.div_dl{
+    margin: 100px;  
+}
+.div_dl h1{
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: #646b6e;
+}
+.dl-inline{
+    margin-bottom: 20px;
+}
+dl {
+    line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  .dt-dotted {
+    overflow-x: hidden;
+    position: relative;
+    width: 700px;
+  }
+  
+  .dt-dotted > span {
+    position: relative;
+  }
+      
+  .dt-dotted > span:after {
+    color: rgb(201, 196, 196);
+    content: '.............................................................................................';
+    left: 100%;
+    position: absolute;
+    top: 0;
+  }
+  
+  dd {
+    margin-left: 0;
+    position: relative;
+    color: #00ca74;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  
+  .dl-inline > dt {
+    clear: left;
+    float: left;
+    margin-right: 3px;
+  }
+    
+  .dl-inline > dd {
+    display: inline-block;
+    margin-left: 0;
+  }
+dt span{
+    font-size: 1em;
+    color: #515d63;
+}
+.tov_h1{
+    margin: 50px 0 0 100px;
+    font-size: 1.9rem;
+}
+
+.decor {
+	max-width: 700px;
+	margin: 0 0 50px 50px;
+}
+
+.form-inner {
+	padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	background: #E9EFF6;
+	line-height: 40px;
+	border-width: 0;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+	margin-top: 30px;
+	background: #4b4848;
+	border-bottom: 4px solid #221e1c;
+	color: white;
+	font-size: 14px;
+}
+.form-inner textarea {
+	resize: none;
+    margin-left: 10px;
+}
+.form_h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	color: grey;
+    margin-bottom: 30px;
+}
+
+.coment-box{
+    border: 3px solid #d4cfcf;
+    margin: 50px 100px 0 100px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.coment-box p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.text-coment{
+    margin-bottom: 30px;
+}
+.coment-box svg{
+    color: #646b6e;
+    cursor: pointer;
+    float: right;
+}
+.coment-box svg:hover{
+    color: #00ca74;
+}
